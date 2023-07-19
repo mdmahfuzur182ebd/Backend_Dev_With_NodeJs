@@ -4,12 +4,12 @@
 2. What is Node ?
 3. Why Node.
 
-.. Getting Up Enviroment
+.. Getting Up Environment
 1. Install Node.
 2. Install Visual Studio Code
 3. Our First Node Program
 
-...Node Module Systeem
+...Node Module System
 1.Window and Global Object
 2.Creating and exports a Module.
 3. Loading a Module.
@@ -17,5 +17,5 @@
 ...Built-in Node Modules
 1. File System Module(synchronous)
 2. Events Module
-3. Inheriting EventEmmiter Class 
+3. Inheriting EventEmitter Class 
 4. HTTP Module
