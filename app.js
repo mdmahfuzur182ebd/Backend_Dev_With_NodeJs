@@ -15,9 +15,10 @@ emitter.on('eventName', ()=>{
  console.log("Event One Called")
 })
 
-emitter.on("event2", () => {
+emitter.on("event2", (e) => {
   console.log("Event two Called");
+  console.log(e.name, e.id)
 });
 
 emitter.emit('eventName')
-emitter.emit('event2')
+emitter.emit('event2', {name:"sajib", id:1})
