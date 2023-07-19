@@ -1,7 +1,7 @@
-// Loading a Module 
-const circle = require("./circle")
+// File system 
+const fs = require('fs')
+let text = fs.readFileSync('./files/input.txt', 'utf-8');
 
-console.log(circle.some(3))
-console.log(circle.circumference(4))
-console.log(circle.name)
-console.log(circle.display())
+text=`Copied Text: ${text}`;
+
+fs.writeFileSync('./files/output.txt', text)
