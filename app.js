@@ -1,24 +1,10 @@
-// Event module.
+// Inheriting EventEmitter class
 
-//node no Dom.
+const  MyEvent = require('./myevent')
+const myEvent = new MyEvent();
 
-// addEventListener('click', (e)=>{
-
-// })
-
-const EventEmitter = require('events')
-//console.log(EventEmitter)
-const emitter = new EventEmitter();
-//console.log(emitter)
-
-emitter.on('eventName', ()=>{
- console.log("Event One Called")
+myEvent.on('event1', ()=>{
+    console.log("Event Function 1")
 })
 
-emitter.on("event2", (e) => {
-  console.log("Event two Called");
-  console.log(e.name, e.id)
-});
-
-emitter.emit('eventName')
-emitter.emit('event2', {name:"sajib", id:1})
+myEvent.functionSome()
